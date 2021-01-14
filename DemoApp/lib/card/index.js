@@ -6,6 +6,7 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { truncate } from 'lodash';
 import { gutter } from '../variables';
@@ -81,14 +82,14 @@ Card.defaultProps = {
 };
 
 Card.propTypes = {
-  src: React.PropTypes.string,
-  title: React.PropTypes.string,
-  link: React.PropTypes.string,
-  gutter: React.PropTypes.number,
-  onPress: React.PropTypes.func,
-  marginBottom: React.PropTypes.number,
-  shadow: React.PropTypes.bool,
-  radius: React.PropTypes.number,
+  src: PropTypes.string,
+  title: PropTypes.string,
+  link: PropTypes.string,
+  gutter: PropTypes.number,
+  onPress: PropTypes.func,
+  marginBottom: PropTypes.number,
+  shadow: PropTypes.bool,
+  radius: PropTypes.number,
 };
 
 export default Card;

@@ -5,6 +5,7 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { truncate } from 'lodash';
 import { primary, gutter } from '../variables';
@@ -41,10 +42,10 @@ ArticleText.defaultProps = {
 };
 
 ArticleText.propTypes = {
-  username: React.PropTypes.string,
-  text: React.PropTypes.string.isRequired,
-  highLightColor: React.PropTypes.string,
-  onPress: React.PropTypes.func,
+  username: PropTypes.string,
+  text: PropTypes.string.isRequired,
+  highLightColor: PropTypes.string,
+  onPress: PropTypes.func,
 };
 
 export default ArticleText;

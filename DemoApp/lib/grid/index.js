@@ -7,6 +7,7 @@ import {
   ListView,
   Dimensions,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { floor, divide, take, chunk } from 'lodash';
 
@@ -83,13 +84,13 @@ Grid.defaultProps = {
 };
 
 Grid.propTypes = {
-  images: React.PropTypes.array.isRequired,
-  spacing: React.PropTypes.number,
-  rows: React.PropTypes.number,
-  headerContent: React.PropTypes.element,
-  footerContent: React.PropTypes.element,
-  onPress: React.PropTypes.func,
-  itemsPerRow: React.PropTypes.number,
+  images: PropTypes.array.isRequired,
+  spacing: PropTypes.number,
+  rows: PropTypes.number,
+  headerContent: PropTypes.element,
+  footerContent: PropTypes.element,
+  onPress: PropTypes.func,
+  itemsPerRow: PropTypes.number,
 };
 
 export default Grid;

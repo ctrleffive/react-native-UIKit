@@ -7,6 +7,7 @@ import  {
   View,
   MapView,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 const MapSection = ({region, annotations, height, fullHeight, ...props}) => (
   <MapView
@@ -27,10 +28,10 @@ MapSection.defaultProps = {
   fullHeight: false,
 }
 MapSection.propTypes = {
-  region: React.PropTypes.object,
-  annotations: React.PropTypes.array,
-  height: React.PropTypes.number,
-  fullHeight: React.PropTypes.bool,
+  region: PropTypes.object,
+  annotations: PropTypes.array,
+  height: PropTypes.number,
+  fullHeight: PropTypes.bool,
 }
 
 export default MapSection;

@@ -6,6 +6,7 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { info, grey, lightGrey } from '../variables';
 import { Time } from '../';
@@ -99,12 +100,12 @@ Message.defaultProps = {
   active: true,
 };
 Message.propTypes = {
-  user: React.PropTypes.string,
-  title: React.PropTypes.string,
-  timestamp: React.PropTypes.number,
-  message: React.PropTypes.string,
-  active: React.PropTypes.bool,
-  onPress: React.PropTypes.func,
+  user: PropTypes.string,
+  title: PropTypes.string,
+  timestamp: PropTypes.number,
+  message: PropTypes.string,
+  active: PropTypes.bool,
+  onPress: PropTypes.func,
 };
 
 export default Message;

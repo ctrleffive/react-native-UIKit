@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Text,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import moment from 'moment'
 
@@ -18,10 +19,10 @@ DateItem.defaultProps = {
 };
 
 DateItem.propTypes = {
-  color: React.PropTypes.string,
-  timestamp: React.PropTypes.number.isRequired,
-  marginLeft: React.PropTypes.number,
-  fontSize: React.PropTypes.number,
+  color: PropTypes.string,
+  timestamp: PropTypes.number.isRequired,
+  marginLeft: PropTypes.number,
+  fontSize: PropTypes.number,
 };
 
 export default DateItem;

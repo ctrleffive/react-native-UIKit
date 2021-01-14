@@ -4,6 +4,7 @@ import {
   View,
   StyleSheet,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   overlay: {
@@ -36,13 +37,13 @@ ImageCustom.defaultProps = {
 };
 
 ImageCustom.propTypes = {
-  src: React.PropTypes.string,
-  height: React.PropTypes.number,
-  blurRadius: React.PropTypes.number,
-  fullHeight: React.PropTypes.bool,
-  overlayOpacity: React.PropTypes.number,
-  overlayColor: React.PropTypes.string,
-  children: React.PropTypes.element,
+  src: PropTypes.string,
+  height: PropTypes.number,
+  blurRadius: PropTypes.number,
+  fullHeight: PropTypes.bool,
+  overlayOpacity: PropTypes.number,
+  overlayColor: PropTypes.string,
+  children: PropTypes.element,
 };
 
 export default ImageCustom;

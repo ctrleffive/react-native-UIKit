@@ -6,6 +6,7 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { truncate } from 'lodash';
 
@@ -61,13 +62,13 @@ ReviewCell.defaultProps = {
 };
 
 ReviewCell.propTypes = {
-  title: React.PropTypes.string,
-  description: React.PropTypes.string,
-  src: React.PropTypes.string,
-  onPress: React.PropTypes.func,
-  gutter: React.PropTypes.number,
-  outOf: React.PropTypes.number.isRequired,
-  rating: React.PropTypes.number.isRequired,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  src: PropTypes.string,
+  onPress: PropTypes.func,
+  gutter: PropTypes.number,
+  outOf: PropTypes.number.isRequired,
+  rating: PropTypes.number.isRequired,
 };
 
 export default ReviewCell;

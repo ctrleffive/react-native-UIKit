@@ -4,6 +4,7 @@ import {
   ListView,
   Dimensions,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { Message } from '../';
 
@@ -36,14 +37,14 @@ MessageList.defaultProps = {
 };
 
 MessageList.propTypes = {
-  gutter: React.PropTypes.number,
-  backgroundColor: React.PropTypes.string,
-  fontSize: React.PropTypes.number,
-  onPress: React.PropTypes.func,
-  items: React.PropTypes.array,
-  timestamp: React.PropTypes.number,
-  headerContent: React.PropTypes.element,
-  footerContent: React.PropTypes.element,
+  gutter: PropTypes.number,
+  backgroundColor: PropTypes.string,
+  fontSize: PropTypes.number,
+  onPress: PropTypes.func,
+  items: PropTypes.array,
+  timestamp: PropTypes.number,
+  headerContent: PropTypes.element,
+  footerContent: PropTypes.element,
 };
 
 export default MessageList;

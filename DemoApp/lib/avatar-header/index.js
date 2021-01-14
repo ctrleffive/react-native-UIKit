@@ -3,6 +3,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { Heading, Avatar, DateItem } from '../';
 
@@ -42,13 +43,13 @@ const AvatarHeader = ({ src, timestamp, heading, circle, backgroundColor, height
 );
 
 AvatarHeader.propTypes = {
-  src: React.PropTypes.string.isRequired,
-  timestamp: React.PropTypes.number,
-  heading: React.PropTypes.string,
-  circle: React.PropTypes.bool,
-  backgroundColor: React.PropTypes.string,
-  height: React.PropTypes.number,
-  gutter: React.PropTypes.number,
+  src: PropTypes.string.isRequired,
+  timestamp: PropTypes.number,
+  heading: PropTypes.string,
+  circle: PropTypes.bool,
+  backgroundColor: PropTypes.string,
+  height: PropTypes.number,
+  gutter: PropTypes.number,
 };
 
 export default AvatarHeader;

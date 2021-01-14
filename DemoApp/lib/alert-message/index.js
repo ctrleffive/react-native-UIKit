@@ -5,6 +5,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { Close } from '../';
 import { alertMessage } from '../variables';
@@ -25,10 +26,10 @@ AlertMessage.defaultProps = {
 };
 
 AlertMessage.propTypes = {
-  color: React.PropTypes.string,
-  backgroundColor: React.PropTypes.string,
-  message: React.PropTypes.string.isRequired,
-  onPress: React.PropTypes.func,
+  color: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  message: PropTypes.string.isRequired,
+  onPress: PropTypes.func,
 };
 
 var styles = StyleSheet.create({

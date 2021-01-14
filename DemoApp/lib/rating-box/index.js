@@ -2,6 +2,7 @@ import React from 'react';
 import {
   View,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import Rating from './rating';
 
@@ -14,6 +15,6 @@ const RatingBox = ({ rating, outOf }) => (
 export default RatingBox;
 
 RatingBox.propTypes = {
-  rating: React.PropTypes.number.isRequired,
-  outOf: React.PropTypes.number.isRequired,
+  rating: PropTypes.number.isRequired,
+  outOf: PropTypes.number.isRequired,
 };

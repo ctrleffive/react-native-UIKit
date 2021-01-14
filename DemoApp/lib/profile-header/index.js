@@ -5,6 +5,7 @@ import {
   View,
   Dimensions,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 const { width } = Dimensions.get('window');
 
@@ -77,12 +78,12 @@ ProfileHeader.defaultProps = {
 };
 
 ProfileHeader.propTypes = {
-  title: React.PropTypes.string,
-  summary: React.PropTypes.string,
-  profileImg: React.PropTypes.string,
-  backgroundImg: React.PropTypes.string,
-  circle: React.PropTypes.bool,
-  blurRadius: React.PropTypes.number,
+  title: PropTypes.string,
+  summary: PropTypes.string,
+  profileImg: PropTypes.string,
+  backgroundImg: PropTypes.string,
+  circle: PropTypes.bool,
+  blurRadius: PropTypes.number,
 };
 
 export default ProfileHeader;

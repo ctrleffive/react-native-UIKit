@@ -4,6 +4,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { gutter, error } from '../variables';
 
@@ -29,10 +30,10 @@ FieldError.defaultProps = {
 };
 
 FieldError.propTypes = {
-  errorMsg: React.PropTypes.string,
-  error: React.PropTypes.bool,
-  color: React.PropTypes.string,
-  marginBottom: React.PropTypes.number,
+  errorMsg: PropTypes.string,
+  error: PropTypes.bool,
+  color: PropTypes.string,
+  marginBottom: PropTypes.number,
 };
 
 export default FieldError;

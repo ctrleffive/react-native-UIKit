@@ -6,6 +6,7 @@ import {
   View,
   Dimensions
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 const {height, width} = Dimensions.get('window');
 
@@ -95,9 +96,9 @@ GalleryOffset.defaultProps = {
   gutter: gutter,
 }
 GalleryOffset.propTypes = {
-  display: React.PropTypes.oneOf(['row', 'column']),
-  gutter: React.PropTypes.number,
-  onPress: React.PropTypes.func,
+  display: PropTypes.oneOf(['row', 'column']),
+  gutter: PropTypes.number,
+  onPress: PropTypes.func,
 }
 
 export default GalleryOffset;

@@ -4,6 +4,7 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import { primary, gutter } from '../variables';
 
@@ -37,16 +38,16 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  radius: React.PropTypes.number,
-  type: React.PropTypes.string,
-  invert: React.PropTypes.bool,
-  backgroundColor: React.PropTypes.string,
-  color: React.PropTypes.string,
-  gutter: React.PropTypes.number,
-  fontWeight: React.PropTypes.string,
-  children: React.PropTypes.string.isRequired,
-  fontSize: React.PropTypes.number,
-  onPress: React.PropTypes.func,
+  radius: PropTypes.number,
+  type: PropTypes.string,
+  invert: PropTypes.bool,
+  backgroundColor: PropTypes.string,
+  color: PropTypes.string,
+  gutter: PropTypes.number,
+  fontWeight: PropTypes.string,
+  children: PropTypes.string.isRequired,
+  fontSize: PropTypes.number,
+  onPress: PropTypes.func,
 };
 
 export default Button;
