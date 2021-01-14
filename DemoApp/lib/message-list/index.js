@@ -1,10 +1,10 @@
 import React from 'react';
 import {
   View,
-  ListView,
   Dimensions,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import ListView from 'deprecated-react-native-listview';
 
 import { Message } from '../';
 

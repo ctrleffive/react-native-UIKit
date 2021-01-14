@@ -4,9 +4,9 @@ import  {
   StyleSheet,
   Text,
   View,
-  ListView,
   StatusBar
 } from 'react-native';
+import ListView from 'deprecated-react-native-listview';
 
 import _ from 'lodash';
 

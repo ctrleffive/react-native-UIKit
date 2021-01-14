@@ -5,10 +5,10 @@ import {
   View,
   Image,
   TouchableOpacity,
-  ListView,
   Dimensions,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import ListView from 'deprecated-react-native-listview';
 
 import { truncate } from 'lodash';
 import { primary, gutter } from '../variables';
